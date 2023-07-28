@@ -11,23 +11,27 @@ const HeroBanner = () => {
   const [background, setBackground] = useState('');
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
+  useEffect(() => {
+    const bg =
+      url.backdrop +
+      data?.results?.[Math.floor(Math.random() * 20)].backdrop_path;
+    setBackground(bg);
+  }, [data]);
   const searchQueryHandler = (event) => {
     if (event.key === 'Enter' && query.length > 0) {
       navigate(`/search/${query}`);
     }
   };
 
-  useEffect(() => {
-    const bg =url?.backdrop + data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
-    setBackground(bg);
-  }, [data]);
   return (
     <div className="heroBanner">
-      {/* {!loading && ( */}
+      {!loading && (
         <div className="backdrop-img">
           <Img src={background} />
         </div>
-      {/* )} */}
+      )}
+      <div className="opacity-layer"></div>
+      <ContentWrapper>
       <div className="wrapper">
         <div className="heroBannerContent">
           <span className="title">Welcome</span>
@@ -45,6 +49,8 @@ const HeroBanner = () => {
           </div>
         </div>
       </div>
+      </ContentWrapper>
+      
     </div>
   );
 };
