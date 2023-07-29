@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 import dayjs from 'dayjs';
 import PosterFallback from '../../assets/no-poster.png';
 import { current } from '@reduxjs/toolkit';
-import ContentWrapper from '../contentWrapper/ContentWrapper';
+import ContentWrapper from '../ContentWrapper/ContentWrapper';
 import CircleRating from '../CircleRating/CircleRating';
 import Img from '../lazyLoadImages/Img';
 import Genres from '../genres/Genres';

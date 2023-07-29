@@ -5,7 +5,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import Select from 'react-select';
 import useFetch from '../../hooks/useFetch';
 import { fetchDataFromApi } from '../../utils/api';
-import ContentWrapper from '../../components/contentWrapper/ContentWrapper';
+import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
 import Spinner from '../../components/spinner/Spinner';
 import MovieCard from '../../components/MovieCard/MovieCard';
 let filters = {};

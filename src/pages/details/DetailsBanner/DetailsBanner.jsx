@@ -8,7 +8,7 @@ import './style.scss';
 import PosterFallback from '../../../assets/no-poster.png';
 import useFetch from '../../../hooks/useFetch';
 import Img from '../../../components/lazyLoadImages/Img';
-import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
+import ContentWrapper from '../../../components/ContentWrapper/ContentWrapper';
 import Genres from '../../../components/genres/Genres';
 import CircleRating from '../../../components/CircleRating/CircleRating';
 import PlaysBtn from '../PlaysBtn';
