@@ -1,7 +1,7 @@
 import HeroBanner from './HeroBanner/HeroBanner';
 import Popular from './popular/Popular';
 import './style.scss';
-import TopRated from './topRated/topRated';
+import TopRated from './TopRated/TopRated';
 import Trending from './trending/Trending';
 const Home = () => {
   return (
