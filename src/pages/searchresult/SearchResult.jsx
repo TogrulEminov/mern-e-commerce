@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { fetchDataFromApi } from '../../utils/api';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
-import Spinner from '../../components/spinner/Spinner';
+import Spinner from '../../components/Spinner/Spinner';
 const SearchResult = () => {
   const [data, setData] = useState(null);
   const [pageNum, setPageNum] = useState(1);

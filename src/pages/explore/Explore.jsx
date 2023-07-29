@@ -6,7 +6,7 @@ import Select from 'react-select';
 import useFetch from '../../hooks/useFetch';
 import { fetchDataFromApi } from '../../utils/api';
 import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
-import Spinner from '../../components/spinner/Spinner';
+import Spinner from '../../components/Spinner/Spinner';
 import MovieCard from '../../components/MovieCard/MovieCard';
 let filters = {};
 
