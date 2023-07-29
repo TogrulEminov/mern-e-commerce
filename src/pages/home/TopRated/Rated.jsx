@@ -1,10 +1,9 @@
 import { useState } from 'react';
+import useFetch from '../../../hooks/useFetch';
 import ContentWrapper from '../../../components/ContentWrapper/ContentWrapper';
 import SwitchTabs from '../../../components/SwitchTabs/SwitchTabs';
 import Carousel from '../../../components/Carousel/Carousel';
-import useFetch from '../../../hooks/useFetch';
-
-const TopRated = () => {
+const Rated = () => {
   const [endpoint, setEndpoint] = useState('movie');
 
   const { data, loading } = useFetch(`/${endpoint}/top_rated`);
@@ -23,4 +22,4 @@ const TopRated = () => {
   );
 };
 
-export default TopRated;
+export default Rated;
