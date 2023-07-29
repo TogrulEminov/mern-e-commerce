@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useEffect, useState } from 'react';
 import { fetchDataFromApi } from '../../utils/api';
-import Spinner from '../../components/spinner/Spinner';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import ContentWrapper from '../../components/contentWrapper/ContentWrapper';
+import Spinner from '../../components/spinner/Spinner';
 const SearchResult = () => {
   const [data, setData] = useState(null);
   const [pageNum, setPageNum] = useState(1);
