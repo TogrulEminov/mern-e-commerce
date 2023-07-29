@@ -1,6 +1,6 @@
 import './App.css';
 import { getApiConfiguration, getGenres } from './store/homeSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchDataFromApi } from './utils/api';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

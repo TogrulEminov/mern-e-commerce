@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import useFetch from '../../../hooks/useFetch';
-import ContentWrapper from '../../../components/ContentWrapper/ContentWrapper';
+import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
 import SwitchTabs from '../../../components/SwitchTabs/SwitchTabs';
 import Carousel from '../../../components/Carousel/Carousel';
 const Rated = () => {

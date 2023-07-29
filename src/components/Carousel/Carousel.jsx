@@ -1,5 +1,5 @@
 import './style.scss';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
@@ -7,12 +7,12 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import dayjs from 'dayjs';
-import ContentWrapper from '../contentWrapper/ContentWrapper';
 import PosterFallback from '../../assets/no-poster.png';
-import Img from '../lazyLoadImages/Img';
-import CircleRating from '../CircleRating/CircleRating';
-import Genres from '../genres/Genres';
 import { current } from '@reduxjs/toolkit';
+import ContentWrapper from '../contentWrapper/ContentWrapper';
+import CircleRating from '../CircleRating/CircleRating';
+import Img from '../lazyLoadImages/Img';
+import Genres from '../genres/Genres';
 const Carousel = ({ data, loading, endpoint, title }) => {
   const carouselContainer = useRef();
   const { url } = useSelector((state) => state.home);
@@ -43,7 +43,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
   return (
     <div className="carousel" ref={carouselContainer}>
       <ContentWrapper>
-      {title && <div className="carouselTitle">{title}</div>}
+        {title && <div className="carouselTitle">{title}</div>}
         <BsFillArrowLeftCircleFill
           className="carouselLeftNav  arrow"
           onClick={() => navigation('left')}

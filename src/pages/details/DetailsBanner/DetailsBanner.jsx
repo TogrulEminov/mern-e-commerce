@@ -5,12 +5,12 @@ import dayjs from 'dayjs';
 
 import './style.scss';
 
-import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
-import useFetch from '../../../hooks/useFetch';
-import Genres from '../../../components/genres/Genres';
-import CircleRating from '../../../components/circleRating/CircleRating';
 import PosterFallback from '../../../assets/no-poster.png';
+import useFetch from '../../../hooks/useFetch';
 import Img from '../../../components/lazyLoadImages/Img';
+import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
+import Genres from '../../../components/genres/Genres';
+import CircleRating from '../../../components/CircleRating/CircleRating';
 import PlaysBtn from '../PlaysBtn';
 import VideoPop from '../../../components/VideoPopup/VideoPop';
 const DetailsBanner = ({ video, crew }) => {
